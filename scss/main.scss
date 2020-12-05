@@ -1,0 +1,94 @@
+.feature-detail{
+    display: flex;
+    width: 100%;
+    .key{
+        position: relative;
+        min-width: 60px;
+        .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgb(235, 232, 232);
+            color: currentColor;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+          
+            /* Position the tooltip */
+            position: absolute;
+            top:-40px;
+            z-index: 1;
+          }
+          
+          &:hover .tooltiptext {
+            visibility: visible;
+          }
+    }
+    .value{
+min-width: 60px;
+    }
+}
+.feature-content{
+    .feature-col {
+        &>.box{
+            min-height: auto;
+        }
+    }
+}
+.cardGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+@media(max-width:1240px){
+    grid-template-columns: auto auto auto;
+
+}
+    @media(max-width:900px){
+        grid-template-columns: auto auto;
+            }
+
+    @media(max-width:580px){
+        grid-template-columns: auto;
+            }
+}
+.mycontainer{
+    width: 85%;
+    margin: auto;
+    @media(max-width:1440px){
+width: 90%;
+    }
+    @media(max-width:1360px){
+width: 98%;
+    }
+}
+
+#rev_slider_18_1_forcefullwidth{
+    @media(max-width:1300px){
+        display: none;
+            }
+}
+.alterHome{
+    width: 100%;
+    @media(min-width:1300px){
+        display: none;
+            }
+}
+.feature-content{
+    
+    @media(min-width:1240px){
+        position: absolute;
+    top: 98%;
+    left: 0%;
+    transform: translateY(-100%);
+    width: 100%;
+    }
+}
+.navbar-top-default{
+    @media(max-width: 768px){
+        position: relative !important;
+    }
+}
+.detailsIcon{
+    height: 20px;
+}
